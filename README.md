@@ -91,7 +91,6 @@ El modelo optimizado logra una alta precisión y un buen balance entre **recall*
 
 ---
 
-Puedes copiar y pegar este contenido en tu `README.md` bajo la sección de **Resultados**. 🚀
 
 ## 📜 Licencia
 Este proyecto está bajo la **Licencia MIT**, lo que permite su uso, modificación y distribución con atribución adecuada.
