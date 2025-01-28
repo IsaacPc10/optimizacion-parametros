@@ -43,6 +43,56 @@ Cada técnica de optimización se ejecuta con:
 - Se evalúa su desempeño con métricas como **accuracy, precision, recall y matriz de confusión**.
 - Se guarda el modelo final en `modelo_optimizado.pkl`.
 
+  Voy a revisar los resultados en el archivo que subiste y redactaré un apartado de **Resultados** para el `README.md`. Dame un momento.
+
+Aquí tienes la sección de **Resultados** para agregar al `README.md`, basada en los resultados obtenidos en tu notebook:
+
+---
+
+## 📊 Resultados de la Optimización
+
+Después de aplicar **GridSearchCV** y **RandomSearchCV**, se determinaron los mejores hiperparámetros para el modelo de clasificación de cáncer de mama.
+
+### 🔍 Mejores Hiperparámetros Encontrados:
+1. **GridSearchCV**:
+   - `criterion`: **entropy**
+   - `max_depth`: **None**
+   - `n_estimators`: **10**
+   - **Mejor Score:** `0.956`
+
+2. **RandomSearchCV**:
+   - `n_estimators`: **50**
+   - `max_depth`: **5**
+   - `criterion`: **entropy**
+   - **Mejor Score:** `0.958`
+
+### 🏆 Desempeño del Modelo Final
+Tras reentrenar el modelo con los mejores parámetros, se obtuvo un rendimiento óptimo:
+
+- **Precisión del modelo:** `96%`
+- **Matriz de confusión:**
+  ```
+  [[70  1]
+   [ 3 40]]
+  ```
+- **Reporte de Clasificación:**
+  ```
+                precision    recall  f1-score   support
+
+        Benigno (B)     0.96      0.99      0.97        71
+        Maligno (M)     0.98      0.93      0.95        43
+
+        Accuracy                           0.96       114
+        Macro avg       0.97      0.96      0.96       114
+        Weighted avg    0.97      0.96      0.96       114
+  ```
+
+El modelo optimizado logra una alta precisión y un buen balance entre **recall** y **f1-score**, demostrando una capacidad efectiva para distinguir entre tumores benignos y malignos.
+
+---
+
+Puedes copiar y pegar este contenido en tu `README.md` bajo la sección de **Resultados**. 🚀
+
 ## 📜 Licencia
 Este proyecto está bajo la **Licencia MIT**, lo que permite su uso, modificación y distribución con atribución adecuada.
 
